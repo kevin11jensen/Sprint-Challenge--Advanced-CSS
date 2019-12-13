@@ -1,1 +1,27 @@
-// Navigation code here
+nav {
+ .displayFlex(column, center, center);
+ width: 99%;
+    h1 {
+        font-size: 5rem;
+        .displayFlex(row, center, center);
+        margin-bottom: 2%;
+        @media @mobile {
+            font-size: 2rem;
+        }
+    }
+    .links {
+        width: 65%;
+        .displayFlex(row, space-around, center);
+        margin-bottom: 1%;
+        @media @mobile {
+            .displayFlex(row, space-between, center);
+            width: 75%;
+        }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        
+    }
+
+}

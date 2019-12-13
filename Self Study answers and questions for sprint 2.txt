@@ -1,0 +1,44 @@
+Self-Study questions for Sprint 2
+
+
+
+    What is the difference between an adaptive website and a fully responsive website?
+	An adaptive website adapts to screen sizing but has no breakpoints so it doesn't
+	re-arrange elements at certain sizes like a fully responsive site with breakpoints.
+	With breakpoints you can set a specific screen size for elements on your page to 
+	move into different places, or just change any element in general, when the user's
+	screen reaches a certain size in pixels.
+
+    Describe what it means to be mobile first vs desktop first.
+	Desktop first design means using "max-width" in your @media breakpoints because you are
+	designing from the desktop version down. You start at the max-width size of a desktop and
+	as the user resizes their screen, the website will hit a specified breakpoint as the screen
+	is sized down, and the elements on the screen will change according to the max-width of the 
+	screeen. It scales down from desktop, to tablet, to mobile in most cases. Mobile first is
+	the opposite direction of screen sizing. Instead of sizing down, you are building for a small
+	screen first and then sizing up to desktop. For this you would use "min-width" for the 
+	@media breakpoints because you are sizing up.
+
+    What does font-size: 62.5% in the html tag do for us when using rem units?
+	"font-size: 62.5%" when placed in the html tag, makes all fonts scale down to 62.5% of their
+	inherit size which is 16px. The reason we do this because 62.5% of 16px equals 1rem which 
+	equals 10px. If 1 rem equals 10px for the entire document, the our math for sizing fonts gets
+	much easier because 1.6rem now equals 16px and our font-sizing is fully responsive.
+
+    How would you describe preprocessing to someone new to CSS?
+	When you're new to CSS you quickly learn that in order to access elements within elements you
+	have to write it out long form. To get to an element within and element that is also within an
+	element you have to write out the path to reach it. Instead of doing that, you can use a 
+	compiler that automatically writes your CSS for you while you write your code into the 
+	compiler using their rules to make your code more readable. In this example, the idea
+	of being able to nest your elements within parent elements directly in your CSS, is called:
+	nesting.
+
+    What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+	My favorite concept in preprocessing, if I had to pick one, is importing different less files
+	to seperate the different sections of the document in CSS. If I want to style the navigation
+	I simply go to the "navigation.less" file and style the navigation there. This makes it so I 
+	can just look at a few lines of code, or just the code for that individual section, instead 
+	of searching through thousands of lines of code. The original index.css file can have 
+	thousands of lines of code in it, making it very tedious to have to find certain styled
+	sections of your document.
